@@ -1,0 +1,13 @@
+doctype html
+html
+  head
+    title= title
+    link(rel='stylesheet', href='/stylesheets/style.css')
+  body
+    block content
+    block scripts
+      scripts(src='/build/main-es5.js')
+      scripts(src='/build/polyfills-es5.js')
+      scripts(src='/build/runtime-es5.js')
+      scripts(src='/build/styles-es5.js')
+      scripts(src='/build/vendor-es5.js')
